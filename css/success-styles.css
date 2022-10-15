@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+    --clr-white: #fff;
+    --clr-blue-1: hsla(198, 89.9%, 51.5%, 0.95);
+    --clr-text-dark: #212121;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Ubuntu, Helvetica, sans-serif;
+    line-height:  1.43;
+    background: rgb(237, 239, 240);
+}
+
+.success-msg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-white);
+    width: 50%;
+    min-width: 320px;
+    height: 50%;
+    max-height: 320px;
+    box-shadow: 0 0 5px 0 hsla(0, 10%, 20%, .4);
+    border-radius: 9px;
+    border: 1px solid var(--clr-text-dark);
+}
+
+.success-icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--clr-blue-1);
+    margin-bottom: 25px;
+}
+
+.success-icon {
+    width: 50px;
+    height: 50px;
+    fill: var(--clr-blue-1);
+}
+
+.success-msg {
+    color: var(--clr-text-dark);
+}
+
+@media (max-width: 767px) {
+    .success-icon-circle {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .success-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .success-msg {
+        font-size: 20px;
+    }
+}
